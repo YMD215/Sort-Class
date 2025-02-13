@@ -70,3 +70,36 @@ class LinkedList extends Sort_1.Sort {
     }
 }
 exports.LinkedList = LinkedList;
+// export class LinkedList {
+//     head: Node | null = null;
+//     add(data: number){
+//         let node = new Node(data);
+//         if(!this.head) this.head = node;
+//         let tail = this.head!;
+//         while(tail.next){
+//             tail = tail.next
+//         }
+//         tail.next = node;
+//     }
+//     get length(){
+//         let counter = 0;
+//         let tail = this.head;
+//         while(tail?.next){
+//             counter++
+//         }
+//         return counter;
+//     }
+//     at(num: number){
+//         if(num >= this.length || num < 0) throw new Error('the index is bigger that the List!!');
+//         let counter = 0;
+//         let tail = this.head;
+//         while(counter < num){
+//             counter++;
+//             tail = tail!.next;
+//         }
+//         return tail!;
+//     }
+//     compare(firstIndex: number, SecIndex: number){
+//         return this.at(firstIndex)?.data > this.at(SecIndex)?.data
+//     }
+// }
